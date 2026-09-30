@@ -1,7 +1,7 @@
 import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
 
-const repositoryName = 'conference-expense-planner'
+const repositoryName = 'FinalProjectReact'
 export default defineConfig({
   base: `/${repositoryName}/`,
   plugins: [react()],
