@@ -46,5 +46,4 @@ src/
 Room prices/capacities and lunch pricing were inconsistent between the source document text and screenshots. Current values follow the supplied data list and are called out above the room and lunch entries in `src/data/catalog.js` so they are easy to revise.
 
 ## Image Credits
-
-Images are served from the Unsplash image CDN (`images.unsplash.com`) and centrally listed in `src/data/images.js`. Replace any image by editing that file. A neutral inline SVG is used when an image request fails.
+Images are centrally listed in `src/data/images.js`. Most are served from the Unsplash image CDN (`images.unsplash.com`); the conference-room image is hosted by Manila Office Furniture Den. A neutral inline SVG is used if an image request fails.

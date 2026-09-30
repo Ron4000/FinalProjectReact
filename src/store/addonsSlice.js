@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit'
 import { addons } from '../data/catalog.js'
 
 const initialState = {
-  items: addons.map(({ id, name, price }) => ({ id, name, price, quantity: 0 })),
+  items: addons.map(({ id, name, price, image }) => ({ id, name, price, image, quantity: 0 })),
 }
 
 const addonsSlice = createSlice({

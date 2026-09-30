@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit'
 import { rooms } from '../data/catalog.js'
 
 const initialState = {
-  items: rooms.map(({ id, name, capacity, price }) => ({ id, name, capacity, price, quantity: 0 })),
+  items: rooms.map(({ id, name, capacity, price, image }) => ({ id, name, capacity, price, image, quantity: 0 })),
 }
 
 const venueSlice = createSlice({
