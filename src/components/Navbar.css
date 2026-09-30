@@ -1,0 +1,22 @@
+.planner-header { position: sticky; z-index: 10; top: 0; color: white; background: var(--navy-deep); box-shadow: 0 5px 24px rgb(9 39 68 / 16%); }
+.planner-nav { width: min(1200px, calc(100% - 2.5rem)); min-height: 74px; display: flex; align-items: center; justify-content: space-between; gap: 1.25rem; margin-inline: auto; }
+.planner-nav .brand { flex: 0 0 auto; font-size: 0.9rem; }
+.planner-nav .brand-mark { width: 33px; height: 33px; }
+.section-nav { display: flex; align-items: center; gap: clamp(1rem, 3.3vw, 3rem); margin-inline: auto; }
+.section-nav a { color: rgb(255 255 255 / 76%); font-size: 0.88rem; font-weight: 600; text-decoration: none; transition: color var(--transition-fast); }
+.section-nav a:hover { color: var(--gold); }
+.nav-details { min-height: 42px; padding-inline: 1rem; font-size: 0.84rem; }
+.nav-details span { font-size: 1rem; }
+@media (max-width: 680px) {
+  .planner-nav { width: calc(100% - 1.5rem); min-height: 66px; gap: 0.6rem; }
+  .planner-nav .brand { gap: 0.45rem; font-size: 0.76rem; }
+  .planner-nav .brand-mark { width: 29px; height: 29px; font-size: 1rem; }
+  .section-nav { gap: 0.75rem; }
+  .section-nav a { font-size: 0.74rem; }
+  .nav-details { min-height: 38px; padding: 0.5rem 0.65rem; font-size: 0.73rem; }
+}
+@media (max-width: 420px) {
+  .planner-nav { flex-wrap: wrap; justify-content: space-between; padding-block: 0.65rem; }
+  .section-nav { order: 3; width: 100%; justify-content: space-around; padding-top: 0.25rem; }
+  .section-nav a { padding: 0.35rem; }
+}
